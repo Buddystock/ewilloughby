@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href = "dist/favicon.ico">
+
+    <title>Ellington Willoughby</title>
+
+    <!-- Bootstrap core CSS -->
+   
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="dist/css/starter-template.css"/>
+    <!-- Custom styles for this template -->
+  </head>
+  <body class = "body1">
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="color: white">MENU
+            <span class="sr-only" style="font-size: 22px">Toggle navigation</span>
+          </button>
+          <a class="navbar-brand" href="index.html">Ellington Willoughby</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">Menu
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="music.html">The Tunes</a></li>
+            <li><a href= "vidz.html">Vidz</a></li>
+            <li><a href= "about.html">?????</a></li>
+            <li><a href= "peeps.html">Peeps</a></li>
+            <li><a href= "schedule.html">Shows</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container3">
+      <div class="starter-template">
+        <p class="rainbow" style="font-size: 32px; background: white; padding: 10px">Fresh Cuts</p>
+        <div class = panel2 style = 'z-index: 5'>
+          <div id = 'app' class = 'playerApp'>
+            <div id="title">
+                <span id="track"></span>
+                <div id="timer">0:00</div>
+                <div id="duration">0:00</div>
+              </div>
+
+              <!-- Controls -->
+              <div class="controlsOuter">
+                <div class="controlsInner">
+                  <div id="loading"></div>
+                  <div class="btn" id="playBtn"></div>
+                  <div class="btn" id="pauseBtn"></div>
+                  <div class="btn" id="prevBtn"></div>
+                  <div class="btn" id="nextBtn"></div>
+                </div>
+                <div class="btn" id="playlistBtn"></div>
+                <div class="btn" id="volumeBtn"></div>
+              </div>
+
+              <!-- Progress -->
+              <div id="waveform"></div>
+              <div id="bar"></div>
+              <div id="progress"></div>
+
+              <!-- Playlist -->
+              <div id="playlist">
+                <div id="list"></div>
+              </div>
+
+              <!-- Volume -->
+              <div id="volume" class="fadeout">
+                <div id="barFull" class="bar"></div>
+                <div id="barEmpty" class="bar"></div>
+                <div id="sliderBtn"></div>
+              </div>
+
+        </div>
+        </div>
+        <p class="rainbow" style="font-size: 32px; background: white; padding: 10px">Spotify</p>
+        <div class = panel2 style = 'z-index: 5'>
+          <p>Spotify Player. 
+          </p>
+        </div>
+        <p class="rainbow" style="font-size: 32px; background: white; padding: 10px">Bandcamp</p>
+        <div class = panel2 style = 'z-index: 5'>
+          <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1544965575/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://ellingtonwilloughby.bandcamp.com/album/moonflower">Moonflower by Ellington Willoughby</a></iframe>
+        </div>
+        <p class="rainbow" style="font-size: 32px; background: white; padding: 10px">SoundCloud</p>
+        <div class = panel2 style = 'z-index: 5'>
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/712051279&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </div>
+        <!-- <p class="rainbow" style="font-size: 32px; background: white; padding: 10px">Camping</p>
+        <div class = panel2 style = 'z-index: 5'>
+          <p>Buddystock is located on private property on a cherry orchard overlooking the Columbia gorge. There is limited water so bring enough to use and to share. It is particularly windy around Buddystock time so camp in the orchard lanes to block the wind or directly behind the house. There are enough propane grills centrally located in a safe area to cook, people share a lot so typically meals are cooked and enjoyed communally--- but its also good to plan to have enough food for yourself. NO CAMPSTOVES ANYWHERE !!!!!!
+          </p>
+        </div>
+        <p class="rainbow" style="font-size: 32px; background: white; padding: 10px">Parking</p>
+        <div class = panel2 style = 'z-index: 5'>
+          <p>Given the dryness of the grass parking is located in a designated area that has been soaked with water before hand to prevent it from catching fire. Do not park any where other than the designated area. 
+          </p>
+        </div>
+        <p class="rainbow" style="font-size: 32px; background: white; padding: 10px">Children</p>
+        <div class = panel2 style = 'z-index: 5'>
+          <p>Children are welcome at Buddystock there will be a designated families camping area for quietude and such – however the music will go all night so silence is not guaranteed. 
+          </p>
+        </div>
+        <p class="rainbow" style="font-size: 32px; background: white; padding: 10px">House</p>
+        <div class = panel2 style = 'z-index: 5'>
+          <p>The stages at Buddystock surround Buddy’s private residence. Buddy requests that no one enter the house during the event. 
+          </p>
+        </div>
+        <p class="rainbow" style="font-size: 32px; background: white; padding: 10px">Food and Drinks</p>
+        <div class = panel2 style = 'z-index: 5'>
+          <p>People share food at Buddystock but there is no guarantee that there will be enough for everyone. Try to coordinate with others on meals. It cannot be enforced enogh but there are to be NO CAMPSTOVES!!!! This year we are going to try to have food trucks show up but its no guarantee.  This is not an organized festival—its more like a hangout at a f        <div style = 'left:0px; z-index: -5' id ='whiskey'>
+            <div class = heart></div>
+            <p style = 'margin:5px; '>You might as well let your heart get good and drunk.</p>
+            <div class = heart></div>
+        </div>riend’s house. THERE IS NO COMMON SOURCE OF ALCOHOL!!!!
+          </p>
+        </div>
+        <p class="rainbow" style="font-size: 32px; background: white; padding: 10px">Health and Safety</p>
+        <div class = panel2 style = 'z-index: 5'>
+          <p>It gets hot out there so remember to stay hydrated. Make sure to watch out for each other and exercise true compassion. 
+          </p>
+        </div>
+      </div> -->
+      <div style = 'left:0px; z-index: -5' id ='whiskey'>
+          <div class = heart></div>
+          <p style = 'margin:5px; '>You might as well let your heart get good and drunk.</p>
+          <div class = heart></div>
+      </div>
+    </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="dist/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="dist/js/bootstrap.js" type="text/javascript"></script>
+
+    <script src="dist/js/howler.core.min.js"></script>
+    <!-- <script src="dist/js/howler.min.js"></script> -->
+    <script src="dist/js/siriwave.js"></script>
+    <script src="dist/js/player.js"></script>
+
+    <script src="dist/whiskey.js" type="text/javascript"></script>
+<!--     <script src="dist/webamp.bundle.min.js" type="text/javascript"></script>
+      <script>
+        const Webamp = window.Webamp;
+        new Webamp({
+            initialTracks: [{
+                metaData: {
+                    artist: "Philistine Dream",
+                    title: "Erase Your Mind"
+                },
+                url: "dist/tracks/Philistine Dream - Erase Your Mind - 01 Erase Your Mind.mp3",
+            },
+            {
+                metaData: {
+                    artist: "Soft Kings",
+                    title: "Don't Ever Fuck With A Tiger"
+                },
+                url: "dist/tracks/Soft Kings - Don't Ever Fuck With A Tiger.mp3",
+            }],
+            initialSkin: {
+                url: "dist/base-2.91.wsz"
+            },
+        }).renderWhenReady(document.getElementById('app'));
+    </script> -->
+    
+  </body>
+</html>

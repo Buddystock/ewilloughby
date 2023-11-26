@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="dist/css/bootstrap-theme.min.css" type="text/css" />
+<link rel="stylesheet" href="dist/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="dist/js/bootstrap.min.js" type="text/javascript" />
+</head>
+
+<body>
+
+    <div class="container my-5">
+  <main class="bd-content" role="main">
+    <h1 class="bd-title" id="content">{{ page.title | smartify }}</h1>
+    <p class="bd-lead">{{ page.description | smartify }}</p>
+    {% include ads.html %}
+    {{ content }}
+  </main>
+</div>
+<div>Hey man, does this thing work
+
+  <canvas id="myCanvas" class = "canvas"></canvas>
+</div>
+  <script>
+            var c = document.getElementById('myCanvas');
+            var ctx = c.getContext('2d');
+            ctx.fillStyle = "green";
+            ctx.font = "30px sans-serif";
+            var words = "Hello world!";
+            var count = 0;
+            var pause = 500; // ms to wait before drawing next character
+            var chars;
+
+
+            function draw() {
+                count ++;
+                // Grab all the characters up to count
+                chars = words.substr(0, count);
+                // Clear the canvas each time draw is called
+                ctx.clearRect(0, 0, c.width, c.height);
+                // Draw the characters to the canvas
+                ctx.fillText(chars, 0, 150);
+                if (count < words.length)
+                    setTimeout(draw, pause);
+            }
+            draw();
+
+        </script>
+        
+</body>
+</html>

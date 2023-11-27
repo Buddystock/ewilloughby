@@ -2,26 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.googleapis.com/css?family=Smooch Sans:500,400,300|M PLUS 1:500,400,300,200');
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground: #444140;
+    --background: #e1f9f9;
+    --primary: #d8dfdd;
+    --secondary: #525252;
+    --accent: #a6bac5;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground: #bfbcbb;
+    --background: #061e1e;
+    --primary: #202725;
+    --secondary: #adadad;
+    --accent: #3a4f59;
   }
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--foreground);
+  background: var(--background) url('/abstract.gif') center/cover no-repeat border-box;
+  font-family: 'M PLUS 1';
+  font-weight: 400;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Smooch Sans';
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 6.575rem;
+  color: var(--foreground);
+}
+
+h2 {
+  font-size: 3.997rem;
+  /* 64px */
+}
+
+h3 {
+  font-size: 2.827rem;
+  /* 45.28px */
+}
+
+h4 {
+  font-size: 1.999rem;
+  /* 32px */
+}
+
+h5 {
+  font-size: 1.414rem;
+  /* 22.56px */
+}
+
+small {
+  font-size: 0.707rem;
+  /* 11.36px */
+}
+
+header {
+  color: var(--primary);
+}
+
+.card {
+  background-color: #3a3f4b;
+  opacity: 0.85;
 }

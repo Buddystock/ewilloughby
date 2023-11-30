@@ -11,6 +11,7 @@
     --primary: #d8dfdd;
     --secondary: #525252;
     --accent: #a6bac5;
+    --logo: url('/images/ellington_logo/1.png')
   }
 }
 
@@ -21,6 +22,7 @@
     --primary: #202725;
     --secondary: #adadad;
     --accent: #3a4f59;
+    --logo: url('/images/ellington_logo/2.png')
   }
 }
 
@@ -30,7 +32,7 @@ html {
 
 body {
   color: var(--foreground);
-  background: var(--background) url('/abstract.gif') center/cover no-repeat border-box;
+  background: var(--background) url('/gif/abstract.gif') center/cover no-repeat border-box;
   font-family: 'M PLUS 1';
   font-weight: 400;
 
@@ -81,5 +83,10 @@ header {
 
 .card {
   background-color: #3a3f4b;
-  opacity: 0.85;
+  opacity: 0.65;
+  border-radius: .5rem;
+}
+
+.player {
+  color: var(--background);
 }
